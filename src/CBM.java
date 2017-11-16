@@ -12,6 +12,7 @@ import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.JScrollPane;
 import java.awt.BorderLayout;
+import javax.swing.JTextPane;
 
 public class CBM {
 
@@ -46,7 +47,7 @@ public class CBM {
 	 */
 	private void initialize() {
 		frame = new JFrame();
-		frame.setBounds(100, 100, 909, 697);
+		frame.setBounds(100, 100, 888, 870);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
@@ -60,9 +61,9 @@ public class CBM {
 		label.setBounds(-16, 10, 3, 2);
 		panel.add(label);
 		
-		JLabel lblNewLabel = new JLabel("\u8BFB\u53D6\u6570\u636E\u60C5\u51B5");
+		JLabel lblNewLabel = new JLabel("\u8BAD\u7EC3\u6570\u636E\u60C5\u51B5");
 		lblNewLabel.setFont(new Font("宋体", Font.PLAIN, 14));
-		lblNewLabel.setBounds(22, 10, 94, 30);
+		lblNewLabel.setBounds(21, 10, 94, 30);
 		panel.add(lblNewLabel);
 		
 		JPanel panel_2 = new JPanel();
@@ -129,8 +130,12 @@ public class CBM {
 		label_10.setBounds(122, 71, 63, 22);
 		panel_3.add(label_10);
 		
+		JButton button = new JButton("\u8BFB\u53D6\u8BAD\u7EC3\u6570\u636E");
+		button.setBounds(694, 24, 141, 30);
+		panel.add(button);
+		
 		JPanel panel_1 = new JPanel();
-		panel_1.setBounds(10, 216, 845, 157);
+		panel_1.setBounds(10, 194, 845, 157);
 		frame.getContentPane().add(panel_1);
 		panel_1.setLayout(null);
 		panel_1.setBorder(new LineBorder(new Color(0, 0, 0), 1, true));
@@ -166,5 +171,90 @@ public class CBM {
 		table.getColumnModel().getColumn(1).setMinWidth(37);
 		table.setRowHeight(30);
 		panel_1.add(table);
+		
+		JPanel panel_4 = new JPanel();
+		panel_4.setBounds(10, 373, 845, 196);
+		frame.getContentPane().add(panel_4);
+		panel_4.setLayout(null);
+		panel_4.setBorder(new LineBorder(new Color(0, 0, 0), 1, true));
+		
+		JLabel label_11 = new JLabel("New label");
+		label_11.setBounds(-16, 10, 3, 2);
+		panel_4.add(label_11);
+		
+		JLabel label_12 = new JLabel("\u8BFB\u53D6\u9891\u7387\u60C5\u51B5");
+		label_12.setFont(new Font("宋体", Font.PLAIN, 14));
+		label_12.setBounds(22, 10, 89, 30);
+		panel_4.add(label_12);
+		
+		JScrollPane scrollPane = new JScrollPane();
+		scrollPane.setBounds(254, 41, 141, 103);
+		panel_4.add(scrollPane);
+		
+		JScrollPane scrollPane_1 = new JScrollPane();
+		scrollPane_1.setBounds(445, 41, 141, 103);
+		panel_4.add(scrollPane_1);
+		
+		JLabel label_13 = new JLabel("\u6B63\u5E38\u9891\u7387");
+		label_13.setFont(new Font("宋体", Font.PLAIN, 14));
+		label_13.setBounds(297, 10, 56, 30);
+		panel_4.add(label_13);
+		
+		JLabel label_14 = new JLabel("\u975E\u6B63\u5E38\u9891\u7387");
+		label_14.setFont(new Font("宋体", Font.PLAIN, 14));
+		label_14.setBounds(481, 10, 70, 30);
+		panel_4.add(label_14);
+		
+		JLabel label_15 = new JLabel("\u5148\u9A8C\u6982\u7387");
+		label_15.setFont(new Font("宋体", Font.PLAIN, 14));
+		label_15.setBounds(254, 152, 63, 22);
+		panel_4.add(label_15);
+		
+		JLabel label_16 = new JLabel("");
+		label_16.setFont(new Font("宋体", Font.PLAIN, 14));
+		label_16.setBorder(new LineBorder(new Color(0, 0, 0)));
+		label_16.setBounds(332, 152, 63, 22);
+		panel_4.add(label_16);
+		
+		JLabel label_17 = new JLabel("\u5148\u9A8C\u6982\u7387");
+		label_17.setFont(new Font("宋体", Font.PLAIN, 14));
+		label_17.setBounds(445, 154, 63, 22);
+		panel_4.add(label_17);
+		
+		JLabel label_18 = new JLabel("");
+		label_18.setFont(new Font("宋体", Font.PLAIN, 14));
+		label_18.setBorder(new LineBorder(new Color(0, 0, 0)));
+		label_18.setBounds(523, 154, 63, 22);
+		panel_4.add(label_18);
+		
+		JButton button_1 = new JButton("\u663E\u793A\u56FE\u50CF\u4E0E\u7ED3\u679C");
+		button_1.setBounds(651, 148, 135, 30);
+		panel_4.add(button_1);
+		
+		JPanel panel_5 = new JPanel();
+		panel_5.setLayout(null);
+		panel_5.setBorder(new LineBorder(new Color(0, 0, 0), 1, true));
+		panel_5.setBounds(10, 612, 845, 157);
+		frame.getContentPane().add(panel_5);
+		
+		JLabel label_19 = new JLabel("New label");
+		label_19.setBounds(-16, 10, 3, 2);
+		panel_5.add(label_19);
+		
+		JLabel label_20 = new JLabel("\u6A21\u7CCA\u8D1D\u53F6\u65AF");
+		label_20.setFont(new Font("宋体", Font.PLAIN, 14));
+		label_20.setBounds(22, 10, 70, 30);
+		panel_5.add(label_20);
+		
+		JLabel lblLambda = new JLabel("lambda=");
+		lblLambda.setFont(new Font("宋体", Font.PLAIN, 14));
+		lblLambda.setBounds(21, 69, 57, 30);
+		panel_5.add(lblLambda);
+		
+		JLabel label_21 = new JLabel("");
+		label_21.setFont(new Font("宋体", Font.PLAIN, 14));
+		label_21.setBorder(new LineBorder(new Color(0, 0, 0)));
+		label_21.setBounds(85, 77, 63, 22);
+		panel_5.add(label_21);
 	}
 }
